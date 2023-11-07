@@ -1,0 +1,69 @@
+ /* Custom styles for notifications */
+ .notification {
+    border: 1px solid #dcdcdc;
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: #333;
+}
+
+.notification.read {
+    background-color: #f7f7f7;
+    /* Change the background color for read notifications */
+    border: 1px solid #ccc;
+}
+
+.bell-icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.notification-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #f35f3d;
+    /* Update the notification count background color */
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 10px;
+   /** font-weight: bold;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); 
+    **/
+}
+
+.notification-popup {
+    background: #ffff;
+    display: none;
+    max-height: 500px;
+    /* Set the maximum height */
+    overflow-y: auto;
+    /* Add a scrollbar when content exceeds max height */
+    border: 1px solid #ccc;
+    /* Add a border to the popup */
+    border-radius: 5px;
+}
+
+.notification-popup .notification {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 15px
+}
+
+
+.notification-popup .notification:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .notification-popup {
+        right: auto;
+        left: 0;
+        width: 100%;
+    }
+}

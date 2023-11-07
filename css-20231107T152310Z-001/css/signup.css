@@ -1,0 +1,117 @@
+/* Center the form */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Add a border and adjust responsiveness */
+.custom-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 90%;
+    /* Increased width */
+    max-width: 600px;
+    /* Set a maximum width */
+    background-color: #f8f9fa;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add logo and title */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* Dark text color */
+}
+
+/* Form fields */
+.form-outline {
+    margin-bottom: 20px;
+}
+
+/* Input style */
+.form-control {
+    font-weight: 500; /* Set font weight to 500 */
+    margin-bottom: 3px;
+    background: #ffff;
+    border: #a3a1a1 solid 1px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    /* Blue button color */
+    border: none;
+    width: 100%;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Link */
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.required-field {
+    border: 1px solid red;
+    box-shadow: 0px 0px 3px red; /* You can adjust the styling as needed */
+}
+
+.form-control.has-value {
+    border-color: #66a6eb; /* Change to your desired color */
+    box-shadow: 0px 0px 3px #66a6eb;
+}
+
+/* Add style for green border */
+.green-border {
+    border-color: #28a745 !important;
+}
+
+
+
+/* Add style for green border */
+.green-border {
+    border-color: #28a745 !important;
+}
+
+/* Add styles for password requirement and match messages */
+.password-requirement,
+.password-match {
+    display: none;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.password-match {
+    color: #28a745;
+}
+
+.password-requirement {
+    color: #dc3545;
+}

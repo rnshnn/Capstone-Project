@@ -1,0 +1,38 @@
+.gradient {
+    background: linear-gradient(90deg, #0d6efd 0%, #198754 100%);
+  }
+  .button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #0d6efd;
+    transition: all 0.2s ease;
+    }
+    .button:active {
+    transform: scale(0.96);
+    }
+    .button:before,
+    .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+    }
+    .img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 8%;
+      
+    }
+    .img img{
+      height: 350px;
+      width: 350px;
+    }
